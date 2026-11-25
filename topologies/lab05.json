@@ -1,0 +1,122 @@
+{
+  "lab": 5,
+  "title": "Mock exam 1 practical: fix the Faculty network",
+  "ccna": [
+    "1.6",
+    "1.13",
+    "2.1",
+    "2.2"
+  ],
+  "nodes": {
+    "SW1": {
+      "type": "switch",
+      "config": [
+        "configure terminal",
+        "hostname SW1",
+        "vlan 10",
+        "name STAFF",
+        "vlan 20",
+        "name STUDENTS",
+        "vlan 99",
+        "name NATIVE",
+        "interface e1",
+        "switchport mode access",
+        "switchport access vlan 10",
+        "interface e2",
+        "switchport mode access",
+        "switchport access vlan 10",
+        "interface e7",
+        "switchport mode access",
+        "switchport access vlan 10",
+        "interface e8",
+        "switchport mode trunk",
+        "switchport trunk native vlan 99",
+        "switchport trunk allowed vlan 10,20,99",
+        "end"
+      ]
+    },
+    "SW2": {
+      "type": "switch",
+      "config": [
+        "configure terminal",
+        "hostname SW2",
+        "vlan 10",
+        "name STAFF",
+        "vlan 20",
+        "name STUDENTS",
+        "vlan 99",
+        "name NATIVE",
+        "interface e1",
+        "switchport mode access",
+        "switchport access vlan 10",
+        "interface e2",
+        "switchport mode access",
+        "switchport access vlan 20",
+        "interface e8",
+        "switchport mode trunk",
+        "switchport trunk native vlan 99",
+        "switchport trunk allowed vlan 10,99",
+        "end"
+      ]
+    },
+    "R1": {
+      "type": "router",
+      "config": "hostname R1\n!\ninterface e0\n description STAFF-GATEWAY\n ip address 10.10.10.1/24\n!\ninterface e1\n description SERVER-LAN\n ip address 172.16.0.1/24\n shutdown\n!\n"
+    },
+    "PC1": {
+      "type": "host",
+      "ip": "10.10.10.11/24",
+      "gw": "10.10.10.1"
+    },
+    "PC2": {
+      "type": "host",
+      "ip": "10.20.20.12/24"
+    },
+    "PC3": {
+      "type": "host",
+      "ip": "10.10.11.13/24",
+      "gw": "10.10.10.1"
+    },
+    "PC4": {
+      "type": "host",
+      "ip": "10.20.20.14/24"
+    },
+    "SRV": {
+      "type": "host",
+      "ip": "172.16.0.10/24",
+      "www": "<h1>Faculty file server</h1><p>If you can read this, the staff path works.</p>"
+    }
+  },
+  "links": [
+    [
+      "PC1:e0",
+      "SW1:e1"
+    ],
+    [
+      "PC2:e0",
+      "SW1:e2"
+    ],
+    [
+      "R1:e0",
+      "SW1:e7"
+    ],
+    [
+      "SW1:e8",
+      "SW2:e8"
+    ],
+    [
+      "PC3:e0",
+      "SW2:e1"
+    ],
+    [
+      "PC4:e0",
+      "SW2:e2"
+    ],
+    [
+      "R1:e1",
+      "SRV:e0"
+    ]
+  ],
+  "ascii": "   STAFF VLAN 10 = 10.10.10.0/24 (gateway R1 .1)     STUDENTS VLAN 20 = 10.20.20.0/24\n                                                     SERVER LAN = 172.16.0.0/24\n\n  +-----+ e1                                          e1 +-----+\n  | PC1 |------+                                  +------| PC3 |\n  +-----+ .11  |  +-----+  e8    trunk    e8 +-----+     .13 +-----+\n  (STAFF)      +--|     |====================|     |    (STAFF)\n                  | SW1 |   native VLAN 99   | SW2 |\n  +-----+ e2   +--|     |                    |     |-+   +-----+\n  | PC2 |------+  +-----+                    +-----+ +---| PC4 |\n  +-----+ .12        | e7                          e2 .14 +-----+\n  (STUDENTS)         | (VLAN 10)                     (STUDENTS)\n                  e0 | .1\n                  +------+ e1        e0 +-----+\n                  |  R1  |--------------| SRV | 172.16.0.10\n                  +------+ .1           +-----+",
+  "image": "labs/img/lab05-topology.svg"
+}

@@ -1,0 +1,32 @@
+{
+  "name": "CCNA Lab Kit",
+  "build": { "dockerfile": "Dockerfile" },
+
+  // Network namespaces, virtual cables and bridges need these powers.
+  "privileged": true,
+  "runArgs": ["--cap-add=NET_ADMIN", "--cap-add=SYS_ADMIN"],
+
+  "remoteUser": "vscode",
+  "containerEnv": {
+    "CCNA_HOME": "${containerWorkspaceFolder}"
+  },
+
+  "postCreateCommand": "bash .devcontainer/post-create.sh",
+  "postStartCommand": "bash .devcontainer/post-start.sh",
+
+  "hostRequirements": { "cpus": 2, "memory": "4gb" },
+
+  "customizations": {
+    "codespaces": {
+      "openFiles": ["labs/00-getting-started.md"]
+    },
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "workbench.startupEditor": "none",
+        "workbench.editorAssociations": { "*.md": "vscode.markdown.preview.editor" },
+        "git.autofetch": false
+      }
+    }
+  }
+}

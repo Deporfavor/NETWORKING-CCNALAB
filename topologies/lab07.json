@@ -1,0 +1,67 @@
+{
+  "lab": 7,
+  "title": "Static routing, default routes and floating statics",
+  "ccna": [
+    "3.1",
+    "3.2",
+    "3.3"
+  ],
+  "nodes": {
+    "R1": {
+      "type": "router",
+      "config": "hostname R1\n!\ninterface e0\n description LAN-1\n ip address 10.1.1.1/24\n!\ninterface e1\n description TO-R2\n ip address 10.0.12.1/30\n!\ninterface e2\n description BACKUP-TO-R3\n ip address 10.0.13.1/30\n!\n"
+    },
+    "R2": {
+      "type": "router",
+      "config": "hostname R2\n!\ninterface e0\n description TO-R1\n ip address 10.0.12.2/30\n!\ninterface e1\n description TO-R3\n ip address 10.0.23.1/30\n!\ninterface e2\n description INTERNET\n ip address 203.0.113.1/24\n!\n"
+    },
+    "R3": {
+      "type": "router",
+      "config": "hostname R3\n!\ninterface e0\n description LAN-3\n ip address 10.3.3.1/24\n!\ninterface e1\n description TO-R2\n ip address 10.0.23.2/30\n!\ninterface e2\n description BACKUP-TO-R1\n ip address 10.0.13.2/30\n!\n"
+    },
+    "PC1": {
+      "type": "host",
+      "ip": "10.1.1.11/24",
+      "gw": "10.1.1.1"
+    },
+    "PC3": {
+      "type": "host",
+      "ip": "10.3.3.13/24",
+      "gw": "10.3.3.1"
+    },
+    "SRV": {
+      "type": "host",
+      "ip": "203.0.113.10/24",
+      "gw": "203.0.113.1",
+      "www": "<h1>Internet server</h1><p>Your default route works.</p>"
+    }
+  },
+  "links": [
+    [
+      "PC1:e0",
+      "R1:e0"
+    ],
+    [
+      "R1:e1",
+      "R2:e0"
+    ],
+    [
+      "R2:e1",
+      "R3:e1"
+    ],
+    [
+      "R1:e2",
+      "R3:e2"
+    ],
+    [
+      "R2:e2",
+      "SRV:e0"
+    ],
+    [
+      "R3:e0",
+      "PC3:e0"
+    ]
+  ],
+  "ascii": "                          +-----+ 203.0.113.10  (\"the Internet\")\n                          | SRV |\n                          +-----+\n                             | e0\n                             | e2 .1   203.0.113.0/24\n                          +------+\n             10.0.12.0/30 |  R2  | 10.0.23.0/30\n                 .2    e0 +------+ e1    .1\n                  +----------+   +----------+\n                  |  .1 e1          e1 .2   |\n  +-----+  e0  +------+                 +------+  e0  +-----+\n  | PC1 |------|  R1  |=================|  R3  |------| PC3 |\n  +-----+ .11  +------+ e2  BACKUP  e2  +------+ .13  +-----+\n  10.1.1.0/24    .1     .1 10.0.13.0/30 .2  .1    10.3.3.0/24",
+  "image": "labs/img/lab07-topology.svg"
+}

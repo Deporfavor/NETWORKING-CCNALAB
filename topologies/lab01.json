@@ -1,0 +1,58 @@
+{
+  "lab": 1,
+  "title": "Meet your lab network and the device CLI",
+  "ccna": [
+    "1.1",
+    "1.2",
+    "1.6"
+  ],
+  "nodes": {
+    "PC1": {
+      "type": "host",
+      "ip": "192.168.1.11/24",
+      "gw": "192.168.1.1"
+    },
+    "PC2": {
+      "type": "host",
+      "ip": "192.168.1.12/24",
+      "gw": "192.168.1.1"
+    },
+    "SW1": {
+      "type": "switch",
+      "config": [
+        "configure terminal",
+        "hostname SW1",
+        "end"
+      ]
+    },
+    "R1": {
+      "type": "router",
+      "config": "hostname Router\n!\ninterface e0\n description LAN-A\n ip address 192.168.1.1/24\n!\ninterface e1\n description LAN-B\n ip address 192.168.2.1/24\n shutdown\n!\n"
+    },
+    "PC3": {
+      "type": "host",
+      "ip": "192.168.2.13/24",
+      "gw": "192.168.2.1"
+    }
+  },
+  "links": [
+    [
+      "PC1:e0",
+      "SW1:e1"
+    ],
+    [
+      "PC2:e0",
+      "SW1:e2"
+    ],
+    [
+      "SW1:e8",
+      "R1:e0"
+    ],
+    [
+      "R1:e1",
+      "PC3:e0"
+    ]
+  ],
+  "ascii": "   LAN-A 192.168.1.0/24                          LAN-B 192.168.2.0/24\n  +-----+ e0     e1 +-----+ e8      e0 +------+ e1          e0 +-----+\n  | PC1 |-----------|     |-------------|  R1  |----------------| PC3 |\n  +-----+  .11      | SW1 |          .1 +------+ .1          .13 +-----+\n  +-----+ e0     e2 |     |\n  | PC2 |-----------|     |\n  +-----+  .12      +-----+",
+  "image": "labs/img/lab01-topology.svg"
+}

@@ -1,0 +1,54 @@
+{
+  "lab": 3,
+  "title": "How a switch learns: MAC tables, ARP and flooding",
+  "ccna": [
+    "1.13",
+    "1.1.b"
+  ],
+  "nodes": {
+    "SW1": {
+      "type": "switch",
+      "config": [
+        "configure terminal",
+        "hostname SW1",
+        "end"
+      ]
+    },
+    "PC1": {
+      "type": "host",
+      "ip": "10.0.0.11/24"
+    },
+    "PC2": {
+      "type": "host",
+      "ip": "10.0.0.12/24"
+    },
+    "PC3": {
+      "type": "host",
+      "ip": "10.0.0.13/24"
+    },
+    "PC4": {
+      "type": "host",
+      "ip": "10.0.0.14/24"
+    }
+  },
+  "links": [
+    [
+      "PC1:e0",
+      "SW1:e1"
+    ],
+    [
+      "PC2:e0",
+      "SW1:e2"
+    ],
+    [
+      "PC3:e0",
+      "SW1:e3"
+    ],
+    [
+      "PC4:e0",
+      "SW1:e4"
+    ]
+  ],
+  "ascii": "          +-----+            +-----+\n          | PC1 | .11    .12 | PC2 |\n          +-----+            +-----+\n             | e1          e2 |\n          +--------------------------+\n          |           SW1            |      one LAN: 10.0.0.0/24\n          +--------------------------+\n             | e3          e4 |\n          +-----+            +-----+\n          | PC3 | .13    .14 | PC4 |\n          +-----+            +-----+",
+  "image": "labs/img/lab03-topology.svg"
+}

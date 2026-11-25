@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 330" width="900" height="330">
+
+<rect width="900" height="330" fill="#ffffff"/>
+<rect x="40.0" y="110.0" width="205.0" height="60.0" rx="0" fill="#2f855a" stroke="#ffffff" stroke-width="2"/>
+<rect x="245.0" y="110.0" width="102.5" height="60.0" rx="0" fill="#1d5fbf" stroke="#ffffff" stroke-width="2"/>
+<rect x="347.5" y="110.0" width="51.2" height="60.0" rx="0" fill="#c05621" stroke="#ffffff" stroke-width="2"/>
+<rect x="398.8" y="110.0" width="461.2" height="60.0" rx="0" fill="#a0aec0" stroke="#ffffff" stroke-width="2"/>
+<line x1="40.0" y1="174.0" x2="40.0" y2="186.0" stroke="#1f2933" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="245.0" y1="174.0" x2="245.0" y2="186.0" stroke="#1f2933" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="347.5" y1="174.0" x2="347.5" y2="186.0" stroke="#1f2933" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="398.8" y1="174.0" x2="398.8" y2="186.0" stroke="#1f2933" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="860.0" y1="174.0" x2="860.0" y2="186.0" stroke="#1f2933" stroke-width="1.5" stroke-linecap="round"/>
+<text x="24.0" y="34.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="19" text-anchor="start" font-weight="bold" fill="#1f2933" xml:space="preserve">VLSM: cutting one /24 into right-sized pieces</text>
+<text x="24.0" y="56.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#5b6773" xml:space="preserve">Like cutting a 256 cm plank: the biggest piece first, each cut on a block boundary.</text>
+<text x="142.5" y="136.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#ffffff" xml:space="preserve">SALES /26</text>
+<text x="142.5" y="154.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" fill="#ffffff" xml:space="preserve">64 addresses</text>
+<text x="296.2" y="136.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#ffffff" xml:space="preserve">ADMIN /27</text>
+<text x="296.2" y="154.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" fill="#ffffff" xml:space="preserve">32 addr</text>
+<text x="373.1" y="136.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="bold" fill="#ffffff" xml:space="preserve">/28</text>
+<text x="373.1" y="154.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" fill="#ffffff" xml:space="preserve">16</text>
+<text x="373.1" y="102.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" fill="#c05621" xml:space="preserve">SERVERS</text>
+<text x="629.4" y="136.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#ffffff" xml:space="preserve">Free for later growth</text>
+<text x="629.4" y="154.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" fill="#ffffff" xml:space="preserve">112 - 255</text>
+<text x="40.0" y="202.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" fill="#1f2933" xml:space="preserve">.0</text>
+<text x="245.0" y="202.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" fill="#1f2933" xml:space="preserve">.64</text>
+<text x="347.5" y="202.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" fill="#1f2933" xml:space="preserve">.96</text>
+<text x="398.8" y="202.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" fill="#1f2933" xml:space="preserve">.112</text>
+<text x="860.0" y="202.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" fill="#1f2933" xml:space="preserve">(.255 end)</text>
+<text x="60.0" y="232.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="start" font-weight="bold" fill="#1f2933" xml:space="preserve">LAN</text>
+<text x="230.0" y="232.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="start" font-weight="bold" fill="#1f2933" xml:space="preserve">Network</text>
+<text x="400.0" y="232.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="start" font-weight="bold" fill="#1f2933" xml:space="preserve">Usable hosts</text>
+<text x="570.0" y="232.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="start" font-weight="bold" fill="#1f2933" xml:space="preserve">Gateway (R1)</text>
+<text x="740.0" y="232.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="start" font-weight="bold" fill="#1f2933" xml:space="preserve">Broadcast</text>
+<text x="60.0" y="254.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="start" font-weight="normal" fill="#1f2933" xml:space="preserve">SALES</text>
+<text x="230.0" y="254.0" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="12.5" text-anchor="start" font-weight="normal" fill="#1f2933" xml:space="preserve">192.168.50.0/26</text>
+<text x="400.0" y="254.0" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="12.5" text-anchor="start" font-weight="normal" fill="#1f2933" xml:space="preserve">.1 - .62</text>
+<text x="570.0" y="254.0" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="12.5" text-anchor="start" font-weight="normal" fill="#1f2933" xml:space="preserve">.1</text>
+<text x="740.0" y="254.0" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="12.5" text-anchor="start" font-weight="normal" fill="#1f2933" xml:space="preserve">.63</text>
+<text x="60.0" y="274.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="start" font-weight="normal" fill="#1f2933" xml:space="preserve">ADMIN</text>
+<text x="230.0" y="274.0" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="12.5" text-anchor="start" font-weight="normal" fill="#1f2933" xml:space="preserve">192.168.50.64/27</text>
+<text x="400.0" y="274.0" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="12.5" text-anchor="start" font-weight="normal" fill="#1f2933" xml:space="preserve">.65 - .94</text>
+<text x="570.0" y="274.0" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="12.5" text-anchor="start" font-weight="normal" fill="#1f2933" xml:space="preserve">.65</text>
+<text x="740.0" y="274.0" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="12.5" text-anchor="start" font-weight="normal" fill="#1f2933" xml:space="preserve">.95</text>
+<text x="60.0" y="294.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="start" font-weight="normal" fill="#1f2933" xml:space="preserve">SERVERS</text>
+<text x="230.0" y="294.0" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="12.5" text-anchor="start" font-weight="normal" fill="#1f2933" xml:space="preserve">192.168.50.96/28</text>
+<text x="400.0" y="294.0" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="12.5" text-anchor="start" font-weight="normal" fill="#1f2933" xml:space="preserve">.97 - .110</text>
+<text x="570.0" y="294.0" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="12.5" text-anchor="start" font-weight="normal" fill="#1f2933" xml:space="preserve">.97</text>
+<text x="740.0" y="294.0" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="12.5" text-anchor="start" font-weight="normal" fill="#1f2933" xml:space="preserve">.111</text>
+</svg>

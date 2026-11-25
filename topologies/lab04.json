@@ -1,0 +1,66 @@
+{
+  "lab": 4,
+  "title": "VLANs and 802.1Q trunks",
+  "ccna": [
+    "2.1",
+    "2.2"
+  ],
+  "nodes": {
+    "SW1": {
+      "type": "switch",
+      "config": [
+        "configure terminal",
+        "hostname SW1",
+        "end"
+      ]
+    },
+    "SW2": {
+      "type": "switch",
+      "config": [
+        "configure terminal",
+        "hostname SW2",
+        "end"
+      ]
+    },
+    "PC1": {
+      "type": "host",
+      "ip": "10.1.1.11/24"
+    },
+    "PC2": {
+      "type": "host",
+      "ip": "10.1.1.12/24"
+    },
+    "PC3": {
+      "type": "host",
+      "ip": "10.1.1.13/24"
+    },
+    "PC4": {
+      "type": "host",
+      "ip": "10.1.1.14/24"
+    }
+  },
+  "links": [
+    [
+      "PC1:e0",
+      "SW1:e1"
+    ],
+    [
+      "PC2:e0",
+      "SW1:e2"
+    ],
+    [
+      "SW1:e8",
+      "SW2:e8"
+    ],
+    [
+      "PC3:e0",
+      "SW2:e1"
+    ],
+    [
+      "PC4:e0",
+      "SW2:e2"
+    ]
+  ],
+  "ascii": "   STAFF = VLAN 10    STUDENTS = VLAN 20    NATIVE = VLAN 99    (all PCs in 10.1.1.0/24)\n\n  +-----+ e1                                          e1 +-----+\n  | PC1 |-------+                                +-------| PC3 |\n  +-----+ .11   |  +-----+  e8   trunk   e8 +-----+ |   .13 +-----+\n  (STAFF)       +--|     |==================|     |-+   (STAFF)\n                   | SW1 |   802.1Q tags    | SW2 |\n  +-----+ e2    +--|     |                  |     |-+   +-----+\n  | PC2 |-------+  +-----+                  +-----+ +-------| PC4 |\n  +-----+ .12                                          e2 .14 +-----+\n  (STUDENTS)                                             (STUDENTS)",
+  "image": "labs/img/lab04-topology.svg"
+}

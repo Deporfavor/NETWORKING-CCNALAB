@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 490" width="900" height="490">
+
+<rect width="900" height="490" fill="#ffffff"/>
+<rect x="110.0" y="190.0" width="700.0" height="220.0" rx="14" fill="none" stroke="#2f855a" stroke-width="1.5" stroke-dasharray="8 5"/>
+<line x1="450.0" y1="156.0" x2="450.0" y2="220.0" stroke="#3d4852" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="243.5" y1="338.8" x2="408.2" y2="260.0" stroke="#3d4852" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="656.5" y1="338.8" x2="491.8" y2="260.0" stroke="#3d4852" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="476.0" y1="130.0" x2="698.0" y2="130.0" stroke="#3d4852" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="220.0" y1="376.0" x2="220.0" y2="428.0" stroke="#3d4852" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="680.0" y1="376.0" x2="680.0" y2="428.0" stroke="#3d4852" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="424.0" y1="130.0" x2="246.0" y2="130.0" stroke="#3d4852" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="194.0" y1="130.0" x2="80.0" y2="130.0" stroke="#3d4852" stroke-width="2.5" stroke-linecap="round"/>
+<rect x="380.0" y="220.0" width="140" height="40" rx="5" fill="#0e8a7a" stroke="#09594f" stroke-width="2"/>
+<line x1="410.8" y1="233" x2="489.2" y2="233" stroke="#fff" stroke-width="2.4"/>
+<path d="M489.2,233 l-6,-4 M489.2,233 l-6,4" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="410.8" y1="247" x2="489.2" y2="247" stroke="#fff" stroke-width="2.4"/>
+<path d="M410.8,247 l6,-4 M410.8,247 l6,4" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="450" cy="130" r="26" fill="#1d5fbf" stroke="#123f80" stroke-width="2"/>
+<line x1="454.0" y1="134.0" x2="466.1" y2="146.1" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M466.1,146.1 L460.2,145.0 M466.1,146.1 L465.0,140.2" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="446.0" y1="126.0" x2="433.9" y2="113.9" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M433.9,113.9 L439.8,115.0 M433.9,113.9 L435.0,119.8" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="466.1" y1="113.9" x2="454.0" y2="126.0" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M454.0,126.0 L455.1,120.1 M454.0,126.0 L459.9,124.9" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="433.9" y1="146.1" x2="446.0" y2="134.0" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M446.0,134.0 L444.9,139.9 M446.0,134.0 L440.1,135.1" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+<circle cx="220" cy="350" r="26" fill="#1d5fbf" stroke="#123f80" stroke-width="2"/>
+<line x1="224.0" y1="354.0" x2="236.1" y2="366.1" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M236.1,366.1 L230.2,365.0 M236.1,366.1 L235.0,360.2" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="216.0" y1="346.0" x2="203.9" y2="333.9" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M203.9,333.9 L209.8,335.0 M203.9,333.9 L205.0,339.8" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="236.1" y1="333.9" x2="224.0" y2="346.0" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M224.0,346.0 L225.1,340.1 M224.0,346.0 L229.9,344.9" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="203.9" y1="366.1" x2="216.0" y2="354.0" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M216.0,354.0 L214.9,359.9 M216.0,354.0 L210.1,355.1" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+<circle cx="680" cy="350" r="26" fill="#1d5fbf" stroke="#123f80" stroke-width="2"/>
+<line x1="684.0" y1="354.0" x2="696.1" y2="366.1" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M696.1,366.1 L690.2,365.0 M696.1,366.1 L695.0,360.2" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="676.0" y1="346.0" x2="663.9" y2="333.9" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M663.9,333.9 L669.8,335.0 M663.9,333.9 L665.0,339.8" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="696.1" y1="333.9" x2="684.0" y2="346.0" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M684.0,346.0 L685.1,340.1 M684.0,346.0 L689.9,344.9" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="663.9" y1="366.1" x2="676.0" y2="354.0" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M676.0,354.0 L674.9,359.9 M676.0,354.0 L670.1,355.1" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+<rect x="698" y="110" width="44" height="30" rx="3" fill="#4a5568" stroke="#2d3748" stroke-width="1.6"/>
+<rect x="702" y="114" width="36" height="22" rx="1.5" fill="#cbd5e0"/>
+<rect x="716" y="140" width="8" height="6" fill="#4a5568"/>
+<rect x="706" y="146" width="28" height="4" rx="2" fill="#4a5568"/>
+<rect x="198" y="430" width="44" height="30" rx="3" fill="#4a5568" stroke="#2d3748" stroke-width="1.6"/>
+<rect x="202" y="434" width="36" height="22" rx="1.5" fill="#cbd5e0"/>
+<rect x="216" y="460" width="8" height="6" fill="#4a5568"/>
+<rect x="206" y="466" width="28" height="4" rx="2" fill="#4a5568"/>
+<rect x="658" y="430" width="44" height="30" rx="3" fill="#4a5568" stroke="#2d3748" stroke-width="1.6"/>
+<rect x="662" y="434" width="36" height="22" rx="1.5" fill="#cbd5e0"/>
+<rect x="676" y="460" width="8" height="6" fill="#4a5568"/>
+<rect x="666" y="466" width="28" height="4" rx="2" fill="#4a5568"/>
+<circle cx="220" cy="130" r="26" fill="#1d5fbf" stroke="#123f80" stroke-width="2"/>
+<line x1="224.0" y1="134.0" x2="236.1" y2="146.1" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M236.1,146.1 L230.2,145.0 M236.1,146.1 L235.0,140.2" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="216.0" y1="126.0" x2="203.9" y2="113.9" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M203.9,113.9 L209.8,115.0 M203.9,113.9 L205.0,119.8" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="236.1" y1="113.9" x2="224.0" y2="126.0" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M224.0,126.0 L225.1,120.1 M224.0,126.0 L229.9,124.9" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="203.9" y1="146.1" x2="216.0" y2="134.0" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M216.0,134.0 L214.9,139.9 M216.0,134.0 L210.1,135.1" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+<rect x="40" y="104" width="40" height="52" rx="4" fill="#c05621" stroke="#7b341e" stroke-width="1.6"/>
+<line x1="48" y1="114" x2="68" y2="114" stroke="#fff" stroke-width="2"/>
+<circle cx="73" cy="114" r="2" fill="#fff"/>
+<line x1="48" y1="127" x2="68" y2="127" stroke="#fff" stroke-width="2"/>
+<circle cx="73" cy="127" r="2" fill="#fff"/>
+<line x1="48" y1="140" x2="68" y2="140" stroke="#fff" stroke-width="2"/>
+<circle cx="73" cy="140" r="2" fill="#fff"/>
+<text x="24.0" y="34.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="19" text-anchor="start" font-weight="bold" fill="#1f2933" xml:space="preserve">Lab 8 topology</text>
+<text x="24.0" y="56.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#5b6773" xml:space="preserve">Three routers on one backbone LAN, all in OSPF area 0. R1 also connects to the ISP.</text>
+<text x="450.0" y="278.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold" fill="#1f2933" xml:space="preserve">SW1</text>
+<text x="450.0" y="294.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="middle" font-weight="normal" fill="#5b6773" xml:space="preserve">backbone LAN 10.0.0.0/24</text>
+<text x="450.0" y="76.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold" fill="#1f2933" xml:space="preserve">R1</text>
+<text x="450.0" y="92.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="middle" font-weight="normal" fill="#5b6773" xml:space="preserve">RID 1.1.1.1</text>
+<text x="184.0" y="348.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="14" text-anchor="end" font-weight="bold" fill="#1f2933" xml:space="preserve">R2</text>
+<text x="184.0" y="364.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="end" font-weight="normal" fill="#5b6773" xml:space="preserve">RID 2.2.2.2</text>
+<text x="716.0" y="348.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="bold" fill="#1f2933" xml:space="preserve">R3</text>
+<text x="716.0" y="364.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="start" font-weight="normal" fill="#5b6773" xml:space="preserve">RID 3.3.3.3</text>
+<text x="752.0" y="128.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="bold" fill="#1f2933" xml:space="preserve">PC1</text>
+<text x="752.0" y="144.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="start" font-weight="normal" fill="#5b6773" xml:space="preserve">192.168.1.11</text>
+<text x="252.0" y="448.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="14" text-anchor="start" font-weight="bold" fill="#1f2933" xml:space="preserve">PC2</text>
+<text x="252.0" y="464.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="start" font-weight="normal" fill="#5b6773" xml:space="preserve">192.168.2.12</text>
+<text x="648.0" y="448.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="14" text-anchor="end" font-weight="bold" fill="#1f2933" xml:space="preserve">PC3</text>
+<text x="648.0" y="464.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="end" font-weight="normal" fill="#5b6773" xml:space="preserve">192.168.3.13</text>
+<text x="220.0" y="92.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold" fill="#1f2933" xml:space="preserve">ISP</text>
+<text x="60.0" y="174.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold" fill="#1f2933" xml:space="preserve">SRV</text>
+<text x="60.0" y="190.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="middle" font-weight="normal" fill="#5b6773" xml:space="preserve">203.0.113.10</text>
+<text x="437.0" y="176.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" fill="#5b6773" xml:space="preserve">e0 .1</text>
+<text x="437.0" y="208.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" fill="#5b6773" xml:space="preserve">e1</text>
+<text x="263.5" y="347.6" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" fill="#5b6773" xml:space="preserve">e0 .2</text>
+<text x="399.4" y="282.6" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" fill="#5b6773" xml:space="preserve">e2</text>
+<text x="647.7" y="324.2" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" fill="#5b6773" xml:space="preserve">e0 .3</text>
+<text x="511.9" y="259.2" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" fill="#5b6773" xml:space="preserve">e3</text>
+<text x="492.0" y="147.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" fill="#5b6773" xml:space="preserve">e1 .1</text>
+<text x="682.0" y="147.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" fill="#5b6773" xml:space="preserve">e0</text>
+<text x="587.0" y="120.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="middle" font-weight="bold" fill="#3d4852" xml:space="preserve">192.168.1.0/24</text>
+<text x="207.0" y="396.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" fill="#5b6773" xml:space="preserve">e1 .1</text>
+<text x="207.0" y="416.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" fill="#5b6773" xml:space="preserve">e0</text>
+<text x="667.0" y="396.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" fill="#5b6773" xml:space="preserve">e1 .1</text>
+<text x="667.0" y="416.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" fill="#5b6773" xml:space="preserve">e0</text>
+<text x="408.0" y="121.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" fill="#5b6773" xml:space="preserve">e2 .2</text>
+<text x="262.0" y="121.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" fill="#5b6773" xml:space="preserve">e0 .1</text>
+<text x="335.0" y="148.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="middle" font-weight="bold" fill="#3d4852" xml:space="preserve">198.51.100.0/30</text>
+<text x="178.0" y="121.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" fill="#5b6773" xml:space="preserve">e1</text>
+<text x="96.0" y="121.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="normal" fill="#5b6773" xml:space="preserve">e0</text>
+<text x="800.0" y="206.0" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="13" text-anchor="end" font-weight="bold" fill="#2f855a" xml:space="preserve">OSPF area 0</text>
+</svg>

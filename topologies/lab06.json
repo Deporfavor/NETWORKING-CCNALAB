@@ -1,0 +1,79 @@
+{
+  "lab": 6,
+  "title": "Inter-VLAN routing with router-on-a-stick",
+  "ccna": [
+    "2.2",
+    "3.1"
+  ],
+  "nodes": {
+    "SW1": {
+      "type": "switch",
+      "config": [
+        "configure terminal",
+        "hostname SW1",
+        "vlan 10",
+        "name STAFF",
+        "vlan 20",
+        "name STUDENTS",
+        "vlan 30",
+        "name GUESTS",
+        "interface e1",
+        "switchport mode access",
+        "switchport access vlan 10",
+        "interface e2",
+        "switchport mode access",
+        "switchport access vlan 20",
+        "interface e3",
+        "switchport mode access",
+        "switchport access vlan 30",
+        "end"
+      ]
+    },
+    "R1": {
+      "type": "router",
+      "config": "hostname R1\n!\ninterface e0\n description TRUNK-TO-SW1\n!\n",
+      "subifs": {
+        "e0": [
+          10,
+          20,
+          30
+        ]
+      }
+    },
+    "PC1": {
+      "type": "host",
+      "ip": "192.168.10.11/24",
+      "gw": "192.168.10.1"
+    },
+    "PC2": {
+      "type": "host",
+      "ip": "192.168.20.12/24",
+      "gw": "192.168.20.1"
+    },
+    "PC3": {
+      "type": "host",
+      "ip": "192.168.30.13/24",
+      "gw": "192.168.30.1"
+    }
+  },
+  "links": [
+    [
+      "PC1:e0",
+      "SW1:e1"
+    ],
+    [
+      "PC2:e0",
+      "SW1:e2"
+    ],
+    [
+      "PC3:e0",
+      "SW1:e3"
+    ],
+    [
+      "SW1:e8",
+      "R1:e0"
+    ]
+  ],
+  "ascii": "                              +------+\n                              |  R1  |   e0.10 = 192.168.10.1/24 (STAFF)\n                              +------+   e0.20 = 192.168.20.1/24 (STUDENTS)\n                                 | e0    e0.30 = 192.168.30.1/24 (GUESTS)\n                                 ||  one cable, three VLANs (802.1Q trunk)\n                                 | e8\n                 +----------------------------------+\n                 |               SW1                |\n                 +----------------------------------+\n                  | e1 (VLAN 10)  | e2 (VLAN 20) | e3 (VLAN 30)\n               +-----+         +-----+        +-----+\n               | PC1 |         | PC2 |        | PC3 |\n               +-----+         +-----+        +-----+\n            192.168.10.11   192.168.20.12   192.168.30.13",
+  "image": "labs/img/lab06-topology.svg"
+}

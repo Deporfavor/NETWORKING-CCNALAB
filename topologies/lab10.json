@@ -1,0 +1,86 @@
+{
+  "lab": 10,
+  "title": "Mock exam 2 practical: repair the branch office",
+  "ccna": [
+    "2.2",
+    "3.3",
+    "3.4",
+    "4.3",
+    "4.6"
+  ],
+  "nodes": {
+    "SW1": {
+      "type": "switch",
+      "config": [
+        "configure terminal",
+        "hostname SW1",
+        "vlan 10",
+        "name STAFF",
+        "vlan 20",
+        "name STUDENTS",
+        "interface e1",
+        "switchport mode access",
+        "switchport access vlan 10",
+        "interface e2",
+        "switchport mode access",
+        "switchport access vlan 20",
+        "interface e8",
+        "switchport mode trunk",
+        "switchport trunk allowed vlan 10",
+        "end"
+      ]
+    },
+    "R1": {
+      "type": "router",
+      "config": "hostname R1\n!\ninterface e0\n description TRUNK-TO-SW1\n!\ninterface e0.10\n description STAFF\n ip address 192.168.10.1/24\n!\ninterface e0.20\n description STUDENTS\n ip address 192.168.21.1/24\n!\ninterface e1\n description TO-R2\n ip address 10.0.12.1/30\n!\nrouter ospf\n ospf router-id 1.1.1.1\n network 10.0.12.0/30 area 0\n network 192.168.10.0/24 area 0\n network 192.168.20.0/24 area 0\n!\n",
+      "subifs": {
+        "e0": [
+          10,
+          20
+        ]
+      }
+    },
+    "R2": {
+      "type": "router",
+      "config": "hostname R2\n!\ninterface e0\n description TO-R1\n ip address 10.0.12.2/30\n!\ninterface e1\n description SERVER-LAN\n ip address 172.16.2.1/24\n!\nrouter ospf\n ospf router-id 2.2.2.2\n network 10.0.12.0/30 area 1\n!\n"
+    },
+    "PC1": {
+      "type": "host",
+      "ip": "192.168.10.11/24",
+      "gw": "192.168.10.1"
+    },
+    "PC2": {
+      "type": "host"
+    },
+    "SRV": {
+      "type": "host",
+      "ip": "172.16.2.10/24",
+      "gw": "172.16.2.1",
+      "www": "<h1>Branch server</h1><p>The branch is repaired.</p>"
+    }
+  },
+  "links": [
+    [
+      "PC1:e0",
+      "SW1:e1"
+    ],
+    [
+      "PC2:e0",
+      "SW1:e2"
+    ],
+    [
+      "SW1:e8",
+      "R1:e0"
+    ],
+    [
+      "R1:e1",
+      "R2:e0"
+    ],
+    [
+      "R2:e1",
+      "SRV:e0"
+    ]
+  ],
+  "ascii": "                              R1 e0.10 = 192.168.10.1/24 (STAFF)\n                              R1 e0.20 = 192.168.20.1/24 (STUDENTS, DHCP server on R1)\n  +-----+ e1                                       OSPF area 0\n  | PC1 |-----+  +-----+ e8  trunk  e0 +------+ e1          e0 +------+ e1      e0 +-----+\n  +-----+     +--| SW1 |===============|  R1  |----------------|  R2  |------------| SRV |\n  +-----+     +--|     |               +------+ .1  10.0.12.0/30 .2 +------+ .1   .10 +-----+\n  | PC2 |-----+  +-----+                                                 172.16.2.0/24\n  +-----+ e2\n  PC1 = 192.168.10.11 (static)    PC2 = DHCP (VLAN 20)",
+  "image": "labs/img/lab10-topology.svg"
+}
